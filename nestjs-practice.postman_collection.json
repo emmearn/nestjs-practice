@@ -6,157 +6,202 @@
 	},
 	"item": [
 		{
-			"name": "http://localhost:3000/tasks/:id",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:3000/tasks/253f6738-fbd6-4fd7-b9f6-51c14ed98d96",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"tasks",
-						"253f6738-fbd6-4fd7-b9f6-51c14ed98d96"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:3000/tasks with filter",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:3000/tasks?status=OPEN&search=room",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"tasks"
-					],
-					"query": [
-						{
-							"key": "status",
-							"value": "OPEN"
-						},
-						{
-							"key": "search",
-							"value": "room"
+			"name": "tasks",
+			"item": [
+				{
+					"name": "http://localhost:3000/tasks/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/tasks/7f5be27e-dc04-438c-b848-4d50b1b860ca",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"7f5be27e-dc04-438c-b848-4d50b1b860ca"
+							]
 						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:3000/tasks/:id",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:3000/tasks/ebb4ea7f-d031-4dc7-baa5-74d07bc48dc0",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"tasks",
-						"ebb4ea7f-d031-4dc7-baa5-74d07bc48dc0"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:3000/tasks/:id",
-			"request": {
-				"method": "PATCH",
-				"header": [],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "status",
-							"value": "IN_PROGRESS",
-							"type": "text"
-						}
-					]
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://localhost:3000/tasks/253f6738-fbd6-4fd7-b9f6-51c14ed98d96/status",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"tasks",
-						"253f6738-fbd6-4fd7-b9f6-51c14ed98d96",
-						"status"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:3000/tasks",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:3000/tasks",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"tasks"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:3000/tasks",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "title",
-							"value": "Clean my room",
-							"type": "text"
-						},
-						{
-							"key": "description",
-							"value": "Lots of cleaning has to be done",
-							"type": "text"
+				{
+					"name": "http://localhost:3000/tasks with filter",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/tasks?status=IN_PROGRESS&search=room",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "IN_PROGRESS"
+								},
+								{
+									"key": "search",
+									"value": "room"
+								}
+							]
 						}
-					]
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://localhost:3000/tasks",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"tasks"
-					]
+				{
+					"name": "http://localhost:3000/tasks/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/tasks/146a27f2-e2e6-467f-baaa-d6ce3736b56e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"146a27f2-e2e6-467f-baaa-d6ce3736b56e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/tasks/:id",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "status",
+									"value": "IN_PROGRESS",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/tasks/7f5be27e-dc04-438c-b848-4d50b1b860ca/status",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"7f5be27e-dc04-438c-b848-4d50b1b860ca",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/tasks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/tasks",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Clean my room",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Lots of cleaning has to be done",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "http://localhost:3000/auth/signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "ariel",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "supersecret",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
