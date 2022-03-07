@@ -130,6 +130,16 @@
 				{
 					"name": "http://localhost:3000/tasks",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIxIiwiaWF0IjoxNjQ2NjQ1MjkwLCJleHAiOjE2NDY2NDg4OTB9.zHpmIx-iBF_auRo4bqI7_gqZtvRt22gAuWQvSmXJnY0",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
@@ -176,12 +186,12 @@
 							"urlencoded": [
 								{
 									"key": "username",
-									"value": "ariel",
+									"value": "user1",
 									"type": "text"
 								},
 								{
 									"key": "password",
-									"value": "supersecret",
+									"value": "SuperSecretP4ssww0!",
 									"type": "text"
 								}
 							]
@@ -196,6 +206,41 @@
 							"path": [
 								"auth",
 								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/auth/signin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "user1",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "SuperSecretP4ssww0!",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"signin"
 							]
 						}
 					},
